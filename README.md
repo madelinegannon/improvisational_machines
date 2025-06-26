@@ -63,6 +63,7 @@ Consider how to harness our newly created flexible workflows to avoid programmin
 - Use the [RobotStudio workcell](RobotStudio/) to accurately simulate your real-time communications and controls.
 
 ### IaaC MRAC 2025 (Barcelona)
+Working with two ABB IRB6700 industrial robots.
 
 #### [Reflection](https://blog.iaac.net/reflection/)
 _Reflection_ is an interactive installation where two robots create immersive geometry using mirrors, lasers, and smoke machines.
