@@ -1,0 +1,9 @@
+MODULE User(SYSMODULE,READONLY)
+    ! Robot-dependent Variables
+    CONST string name:="Mortadela";
+    CONST jointtarget home_joints:=[[-90,0,0,0,0,0],[0,0,0,0,0,0]];
+    CONST string IP_address_local:="127.0.0.1";
+    CONST string IP_address_robot:="192.168.1.10";
+    CONST num port_local:=1026;
+    CONST num port_robot:=1025;
+ENDMODULE

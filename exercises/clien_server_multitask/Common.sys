@@ -1,0 +1,29 @@
+MODULE Common(SYSMODULE)
+    ! Global Variables shared across Tasks
+    !************************************************
+
+    ! home speed, default 500
+    PERS speeddata speed_home;
+    PERS pos center;
+    PERS num width;
+    
+    ! Flags for Routines
+    PERS bool draw_square := FALSE;
+    PERS bool go_home := FALSE;
+    PERS bool go_myGHmotion := FALSE;
+    
+    ! Default Naming Conventions from GH
+    CONST confdata conf:=[0,0,0,0];
+    CONST speeddata DefaultSpeed:=v500;
+    PERS tooldata DefaultTool:=[TRUE,[[0,0,0],[1,0,0,0]],[0.001,[0,0,0.001],[1,0,0,0],0,0,0]];
+    PERS wobjdata DefaultFrame:=[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+    PERS extjoint extj:=[0,0,0,0,0,0];
+    
+    PROC Reset()
+        ! Resets persistent variables to default
+        speed_home := v500;
+        draw_square := FALSE;
+        go_home := FALSE;
+        go_myGHmotion := FALSE;
+    ENDPROC
+ENDMODULE
