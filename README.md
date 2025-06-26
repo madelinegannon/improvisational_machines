@@ -1,4 +1,12 @@
 # Improvisational Machines: Live Coding Industrial Robots
+A four-day workshop bringing live coding principles, dynamic interfaces, and flexibles workflows into industrial robotics.
+
+- Faculty: [Madeline Gannon](https://atonaton.com/)
+- Faculty Assistant: [Huanyu Li](https://huanyuli.com/)
+
+![](https://adsknews.autodesk.com/app/uploads/2016/11/MadelineinAutodesk_Boston_BUILD.png)
+
+_Developed for the Institute for Advanced Architecture of Catalonia's Master in Robotics & Advanced Construction program._
 
 ## About
 Industrial robots are conventionally programmed with software tools designed for reliability, precision, and repeatability. However, these workflows can be counterproductive in situations where real-time experimentation and problem solving needs to be the priority. For example, using industrial robots in dynamic environments—like construction sites—or for creative applications requires a level of spontaneous exploration and adaptation that can be very difficult to achieve with traditional CAD/CAM tools.
@@ -40,18 +48,19 @@ By the end of the workshop, attendees will:
   - Sensors
 
 ## Exercises
-1. Hello World: Write & run your first RAPID module
-2. Draw Square: Make the robot move in RAPID
-3. Basic Client/Server: Send command line messages from Python client to the ABB Robot
-4. Multi-Task Client/Server: Send messages to control program flow of the ABB Robot
+1. [Hello World](exercises/hello_world/): Write & run your first RAPID module
+2. [Draw Square](exercises/draw_square/): Make the robot move in RAPID
+3. [Basic Client/Server](exercises/client_server_basic/): Send command line messages from Python client (or Grasshopper) to the ABB Robot
+4. [Multi-Task Client/Server](exercises/client_server_multitask/): Send messages to control program flow of the ABB Robot
+5. [Input Devices](exercises/hid/): Python snippets for sending/receiving MIDI and OSC messages
 
 
 ## Final Project
 This is a _one day speed project_ to integrate the live coding tools and principles we've been learning into an application of your choosing.
 Consider how to harness our newly created flexible workflows to avoid programming painpoints, iterate with rapid trial-and-error, or unlock an interactive experience between people and the robots.
 
-- Use the [Communication Manager]() to send/receive MIDI, OSC, TCP messages between many clients and many ABB Robots.
-- Use the [RobotStudio workcell]() to accurately simulate your real-time communications and controls.
+- Use the [Communication Manager](com_manager/) to send/receive MIDI, OSC, TCP messages between many clients and many ABB Robots.
+- Use the [RobotStudio workcell](RobotStudio/) to accurately simulate your real-time communications and controls.
 
 ### IaaC MRAC 2025 (Barcelona)
 
